@@ -3,10 +3,10 @@
 <app-shopping-cart-item
 *ngFor="let item of cartItems"
 [cartItem]="item"
-(cartItemDelete)="deleteItem(item)"
+(closeThisItem)="deleteItem(item)"
 
 ></app-shopping-cart-item>
 
-<p class="total"><span class="total-label">total:</span> 000.00 $</p>
+<p class="total"><span class="total-label">total:</span> {{total}} $</p>
 
 <button> Finalizar Pedido</button>

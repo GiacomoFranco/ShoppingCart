@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
-import { CartItem } from './cart-item';
+import { cartItem } from './cart-item';
 
 @Component({
   selector: 'app-shopping-cart-item',
@@ -8,18 +8,16 @@ import { CartItem } from './cart-item';
 })
 
 export class ShoppingCartItemComponent implements OnInit {
-
-  @Input() cartItem: CartItem;
-
-  @Output() cartItemDelete = new EventEmitter<void>();
-
+  @Input() cartItem: cartItem;
+  @Output() closeThisItem = new EventEmitter<void>();
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  onDeleteClicked(){
-    this.cartItemDelete.emit();
+  closeItem(){
+  this.closeThisItem.emit();
   }
+
 }
