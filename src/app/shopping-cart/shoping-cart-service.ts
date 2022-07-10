@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { cartItem } from './cart-item';
+import { CartItem } from './cart-item';
 
 @Injectable({
   providedIn:'root'
@@ -7,7 +7,7 @@ import { cartItem } from './cart-item';
 
 export class ShoppingCartService {
 
-  items : cartItem[] = [
+  items : CartItem[] = [
     {
       imageUrl:"headphones.jpg",
       name:"Auriculares",
@@ -29,7 +29,7 @@ export class ShoppingCartService {
     return this.items.reduce((acc,{price}) =>( acc += price), 0)
   }
 
-  deleteItem(itemToDelete: cartItem): void{
+  deleteItem(itemToDelete: CartItem): void{
     this.items = this.items.filter(item => item !== itemToDelete);
   }
 }
