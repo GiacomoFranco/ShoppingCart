@@ -32,4 +32,8 @@ export class ShoppingCartService {
   deleteItem(itemToDelete: CartItem): void{
     this.items = this.items.filter(item => item !== itemToDelete);
   }
+
+  get productsAmount(){
+    return this.items.length
+  }
 }

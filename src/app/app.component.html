@@ -1,1 +1,2 @@
-<app-shopping-cart></app-shopping-cart>
+<app-header (openCartEmit)="changueCartState()"></app-header>
+<app-shopping-cart *ngIf="cartState"></app-shopping-cart>

@@ -1,9 +1,12 @@
 :host {
+  top: 60px;
+  position: absolute;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: stretch;
   justify-content: flex-start;
-  padding: 28px;
+  padding: 56px;
 }
 
 .title {
