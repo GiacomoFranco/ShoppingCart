@@ -1,0 +1,10 @@
+<div class="card">
+  <img src="../../assets/items/{{catalogItem?.imageUrl}}" alt="" class="product-img">
+  <div class="bottom-card">
+    <div class="info">
+      <span class="name">{{catalogItem?.name}}</span>
+      <span class="price">{{catalogItem?.price}}$</span>
+    </div>
+    <button (click)="addItem(catalogItem)"><img src="../../assets/plus-solid.svg" alt="add"></button>
+  </div>
+</div>

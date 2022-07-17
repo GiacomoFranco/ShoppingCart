@@ -7,24 +7,7 @@ import { CartItem } from "./cart-item";
 
 export class ShoppingCartService{
 
-  itemsOnCart : CartItem[] = [
-    {
-      imageUrl: 'headphones.jpg',
-      name: 'Auriculares',
-      price: 50,
-    },
-    {
-      imageUrl: 'keyboard.jpg',
-      name: 'Teclado',
-      price: 150,
-    },
-    {
-      imageUrl: 'monitor.jpg',
-      name: 'Auriculares',
-      price: 200,
-    },
-
-  ]
+  itemsOnCart : CartItem[];
 
   deleteItemOnCart(itemToDelete : CartItem){
     this.itemsOnCart = this.itemsOnCart.filter((item) => item !== itemToDelete);

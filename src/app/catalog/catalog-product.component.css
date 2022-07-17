@@ -1,0 +1,59 @@
+
+.card{
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  width: 230px;
+  height: 230px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px 10px 0;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.047);
+  overflow: hidden;
+}
+
+.product-img{
+  height: 68%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.bottom-card{
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+}
+
+.name{
+  font-weight: 700;
+}
+
+.price{
+  font-weight:400;
+}
+
+button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: none;
+  border-radius: 50%;
+  background-color: #5e00ea;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+button img{
+  height: 60%;
+  filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(152deg) brightness(105%) contrast(101%);
+}

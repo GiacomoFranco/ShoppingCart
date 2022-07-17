@@ -11,5 +11,5 @@ export class AppComponent {
     this.cartState = !this.cartState
   }
 
-  cartState : boolean = false;
+  cartState : boolean = true;
 }

@@ -1,2 +1,6 @@
 <app-header (openCartEmit)="changueCartState()"></app-header>
-<app-shopping-cart *ngIf="cartState"></app-shopping-cart>
+<app-shopping-cart *ngIf="cartState; else elseBlock"></app-shopping-cart>
+<ng-template #elseBlock>
+  <app-catalog-component></app-catalog-component>
+</ng-template>
+
