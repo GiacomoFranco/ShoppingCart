@@ -1,0 +1,15 @@
+<p>Todos los pedidos</p>
+<ul>
+  <li *ngFor="let order of orders">
+    <span>{{order.id}}.</span> {{order.status}}
+  </li>
+</ul>
+
+<button (click)="addOrder()"> Añadir Pedido </button>
+
+<p>Pedidos en preparación</p>
+<ul>
+  <li *ngFor="let order of orders |filterOrders: os.InPreparation">
+    <span>{{order.id}}.</span> {{order.status}}
+  </li>
+</ul>
