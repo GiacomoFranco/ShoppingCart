@@ -11,5 +11,10 @@ export class AppComponent {
     this.cartState = !this.cartState
   }
 
-  cartState : boolean = true;
+  changueMenuState(){
+    this.menuState = !this.menuState
+  }
+
+  cartState : boolean = false;
+  menuState : boolean = true;
 }

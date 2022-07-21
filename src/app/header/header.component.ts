@@ -9,6 +9,7 @@ import { ShoppingCartService } from '../shopping-cart/shoping-cart-service';
 export class HeaderComponent implements OnInit {
 
   @Output() openCartEmit = new EventEmitter<void>();
+  @Output() openMenuEmit = new EventEmitter<void>();
 
   constructor(private sCartService : ShoppingCartService) { }
 
@@ -20,7 +21,10 @@ export class HeaderComponent implements OnInit {
   }
 
   openCart(){
-  this.openCartEmit.emit();
+    this.openCartEmit.emit();
   }
 
+  openMenu(){
+    this.openMenuEmit.emit();
+  }
 }

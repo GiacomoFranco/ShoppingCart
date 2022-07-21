@@ -1,6 +1,9 @@
-<app-header (openCartEmit)="changueCartState()"></app-header>
-<app-shopping-cart *ngIf="cartState; else elseBlock"></app-shopping-cart>
-<ng-template #elseBlock>
-  <app-catalog-component></app-catalog-component>
+<ng-template #currentWindow>
+  <app-header (openCartEmit)="changueCartState()" (openMenuEmit)="changueMenuState()"></app-header>
+  <app-shopping-cart *ngIf="cartState; else elseBlock"></app-shopping-cart>
+  <ng-template #elseBlock>
+    <app-catalog-component></app-catalog-component>
+  </ng-template>
 </ng-template>
 
+<app-nav-drawer *ngIf="menuState; else currentWindow" (closeMenuEmitter)="changueMenuState()"></app-nav-drawer>
