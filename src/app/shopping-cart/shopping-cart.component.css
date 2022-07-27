@@ -3,6 +3,13 @@
   position: absolute;
   width: 100%;
   display: flex;
+  justify-content: center;
+}
+
+.carrito{
+  width: 100%;
+  max-width: 900px;
+  display: flex;
   flex-direction: column;
   align-items: stretch;
   justify-content: flex-start;

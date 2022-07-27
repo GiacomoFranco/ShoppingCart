@@ -8,7 +8,7 @@ import { Product } from './product';
   templateUrl: './catalog-product.component.html',
   styleUrls: ['./catalog-product.component.css']
 })
-export class CatalogProductComponentComponent implements OnInit {
+export class CatalogProductComponent implements OnInit {
 
   @Input() catalogItem : Product;
 

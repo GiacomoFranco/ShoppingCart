@@ -7,7 +7,7 @@ import { Product } from './product';
   templateUrl: 'catalog.component.html',
   styleUrls: ['./catalog.component.css']
 })
-export class CatalogComponentComponent implements OnInit {
+export class CatalogComponent implements OnInit {
 
   constructor( private catalogComponent : CatalogServiceService) { }
 

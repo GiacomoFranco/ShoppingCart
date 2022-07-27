@@ -8,6 +8,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 export class NavDrawerComponent implements OnInit {
 
   @Output() closeMenuEmitter = new EventEmitter<void>();
+  @Output() closeAllEmitter = new EventEmitter<void>();
 
   constructor() { }
 
@@ -16,5 +17,9 @@ export class NavDrawerComponent implements OnInit {
 
   closeMenu(){
     this.closeMenuEmitter.emit();
+  }
+
+  closeAll(){
+    this.closeAllEmitter.emit();
   }
 }

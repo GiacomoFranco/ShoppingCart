@@ -1,8 +1,5 @@
 :host{
   display: flex;
   flex-wrap: wrap;
-}
-
-.card{
-
+  justify-content: center;
 }
