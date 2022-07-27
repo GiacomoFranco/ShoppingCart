@@ -1,0 +1,98 @@
+
+:host{
+  margin-top: 20px;
+}
+
+.button-volver{
+  text-decoration: none;
+  color: #757575;
+  font-size: 15px;
+  margin: 30px 20px;
+}
+
+.card{
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  width: 450px;
+  height: 480px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px 10px 0;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.047);
+  overflow: hidden;
+}
+
+.product-img{
+  height: 68%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.bottom-card{
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.name{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.description{
+  color: #757575;
+  font-weight: 400;
+}
+
+.price{
+  font-weight:700;
+  font-size: 40px;
+  color: #5e00ea;
+}
+
+.name-and-description{
+  display: flex;
+  flex-direction: column;
+}
+
+.price-and-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+button{
+  padding: 0 20px 0 20px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 180px;
+  height: 40px;
+  border: none;
+  background: none;
+  border-radius: 10px;
+  background-color: #5e00ea;
+  color: white;
+  cursor: pointer;
+  align-self: flex-end;
+  font-weight: 700;
+}
+
+button img{
+  height: 50%;
+  filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(152deg) brightness(105%) contrast(101%);
+}
