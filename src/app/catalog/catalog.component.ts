@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CatalogServiceService } from './catalog-service.service';
+import { CatalogService } from './catalog.service';
 import { Product } from './product';
 
 @Component({
@@ -9,7 +9,7 @@ import { Product } from './product';
 })
 export class CatalogComponent implements OnInit {
 
-  constructor( private catalogComponent : CatalogServiceService) { }
+  constructor( private catalogComponent : CatalogService) { }
 
   ngOnInit(): void {
   }

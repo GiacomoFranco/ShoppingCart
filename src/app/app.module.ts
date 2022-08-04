@@ -12,6 +12,9 @@ import { CatalogModule } from './catalog/catalog.module';
 import { ShoppingCartModule } from './shopping-cart/shopping-cart.module';
 import { ContactModule } from './contact/contact.module';
 import { PipeTestModule } from './pipe-test/pipe-test.module';
+import { ProductDetailsComponent } from './catalog/product-details/product-details.component';
+
+//Generando las rutas
 
 const routes : Routes = [
   {
@@ -25,6 +28,10 @@ const routes : Routes = [
   {
     path: 'pipes',
     component: PipeTestComponent,
+  },
+  {
+    path: 'detail',
+    component: ProductDetailsComponent,
   }
 ]
 
