@@ -10,7 +10,7 @@ export class CatalogService {
 
   constructor() { }
 
-  catalogItems : Product[] = [
+  readonly catalogItems : Product[] = [
     {
       id: 1,
       imageUrl: 'headphones.jpg',
@@ -31,5 +31,9 @@ export class CatalogService {
     },
 
 
-  ]
+  ];
+
+  getProduct(requestId: number): Product | null {
+    return this.catalogItems.find((product) => product.id === requestId) || null;
+  }
 }

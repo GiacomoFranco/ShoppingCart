@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CatalogComponent } from './catalog/catalog.component';
 import { HeaderComponent } from './header/header.component';
@@ -22,6 +21,10 @@ const routes : Routes = [
     component: CatalogComponent
   },
   {
+    path: 'catalog/:id',
+    component: ProductDetailsComponent
+  },
+  {
     path: 'contact',
     component: ContactComponent,
   },
@@ -32,7 +35,7 @@ const routes : Routes = [
   {
     path: 'detail',
     component: ProductDetailsComponent,
-  }
+  },
 ]
 
 @NgModule({
@@ -43,7 +46,6 @@ const routes : Routes = [
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     CatalogModule,
     ShoppingCartModule,
     ContactModule,
