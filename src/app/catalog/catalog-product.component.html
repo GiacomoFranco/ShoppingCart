@@ -1,8 +1,8 @@
-<div class="card" [routerLink]="[catalogItem.id]">
-  <img src="../../assets/items/{{catalogItem?.imageUrl}}" alt="" class="product-img">
+<div class="card">
+  <img (click)="navigateToProductDetails()" src="../../assets/items/{{catalogItem?.imageUrl}}" alt="" class="product-img">
   <div class="bottom-card">
     <div class="info">
-      <a  [routerLink]="[catalogItem.id]" class="name">{{catalogItem?.name}}</a>
+      <a  (click)="navigateToProductDetails()" class="name">{{catalogItem?.name}}</a>
       <span class="price">{{catalogItem?.price}}$</span>
     </div>
     <button (click)="addItem(catalogItem)"><img src="../../assets/plus-solid.svg" alt="add"></button>

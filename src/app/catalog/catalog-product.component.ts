@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ActivatedRoute, RouterModule } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ShoppingCartService } from '../shopping-cart/shoping-cart-service';
 import { mapProductToCartItem } from './helper/map-product-to-cart-item.helper';
 import { Product } from './product';
@@ -15,7 +15,7 @@ export class CatalogProductComponent implements OnInit {
 
   constructor(
      private sCService : ShoppingCartService,
-     private router: RouterModule,
+     private router: Router,
      private route: ActivatedRoute,
     ) { }
 
@@ -27,9 +27,10 @@ export class CatalogProductComponent implements OnInit {
     this.sCService.addItem(cartItem);
   }
 
-  // navigateToProductDetails(): void {
-  //   this.router.navigate(['products', this.catalogItem.id], {
-  //     relativeTo: this.route,
-  //   });
+  navigateToProductDetails(): void {
+    this.router.navigate(['products', this.catalogItem.id], {relativeTo: this.route,});
+  }
+
+
 
 }

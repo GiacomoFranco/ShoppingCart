@@ -16,6 +16,7 @@
   height: 68%;
   width: 100%;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .bottom-card{
@@ -35,6 +36,7 @@
   font-weight: 700;
   text-decoration: none;
   color: #000;
+  cursor: pointer;
 }
 
 .price{
