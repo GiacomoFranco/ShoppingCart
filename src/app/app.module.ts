@@ -12,10 +12,16 @@ import { ShoppingCartModule } from './shopping-cart/shopping-cart.module';
 import { ContactModule } from './contact/contact.module';
 import { PipeTestModule } from './pipe-test/pipe-test.module';
 import { ProductDetailsComponent } from './catalog/product-details/product-details.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HomeComponent } from './home/home.component';
 
 //Generando las rutas
 
 const routes : Routes = [
+  {
+    path: '',
+    component: HomeComponent,
+  },
   {
     path: 'catalog',
     component: CatalogComponent
@@ -33,8 +39,8 @@ const routes : Routes = [
     component: PipeTestComponent,
   },
   {
-    path: 'detail',
-    component: ProductDetailsComponent,
+    path: '**',
+    component: PageNotFoundComponent,
   },
 ]
 
@@ -43,6 +49,9 @@ const routes : Routes = [
     AppComponent,
     HeaderComponent,
     NavDrawerComponent,
+    HomeComponent,
+    PageNotFoundComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

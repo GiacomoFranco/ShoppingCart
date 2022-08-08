@@ -23,9 +23,6 @@ export class ProductDetailsComponent implements OnInit {
 
     const productId = this.route.snapshot.paramMap.get('id');
     this.product = this.catalogService.getProduct(Number(productId));
-
-    //la sintaxis no la entiendo, en *getProduct(Number(productId))*
-
     if(this.product === null){
       this.router.navigate(['catalog']);
     }
