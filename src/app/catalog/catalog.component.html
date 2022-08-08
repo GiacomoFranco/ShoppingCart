@@ -1,7 +1,9 @@
-<a routerLink="./" [queryParams]="{orderBy : 'price'}">Ordenar por precio</a>
 <div>
-  <app-catalog-product-component
-  *ngFor="let item of catalogItems"
-  [catalogItem]="item"
-  ></app-catalog-product-component>
+  <a routerLink="./" [queryParams]="{orderBy : 'price'}">Ordenar por precio</a>
+  <div>
+    <app-catalog-product-component
+    *ngFor="let item of catalogItems"
+    [catalogItem]="item"
+    ></app-catalog-product-component>
+  </div>
 </div>
